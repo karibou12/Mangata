@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+        <title>Mangata</title>
+    </head>
+
+
+    <body>
+<br>
+        <div class="background visible">
+            <img class="background-image" src="./images/banner.jpg" alt="Architecque d'intérieur">
+        </div>
+
+
+        <img class="logo" src="./images/logo.png" alt="Architecque d'intérieur">
+
+
+        <header>
+            <ul class="logo-lien">
+                <li class="socialIcon" onmouseover="selectIcon(this)" onmouseout="unselectIcon()"><a
+                        href="https://www.facebook.com/aline.mangata.9" target="_blank"><img
+                            src="./images/logo-facebook.png" alt="facebook" height="30"></a></li>
+                <li class="socialIcon" onmouseover="selectIcon(this)" onmouseout="unselectIcon()"><a href=""
+                        target="_blank"></a><img src="./images/logo-instagram.png" alt="instagram" height="30"></li>
+                <li class="socialIcon" onmouseover="selectIcon(this)" onmouseout="unselectIcon()"><a href=""
+                        target="_blank"></a><img src="./images/logo-mail2.png" alt="mail" height="25"
+                        style="margin-left: 5px;"></li>
+            </ul>
+        </header>
+
+
+        <section>
+
+            <div class="menu presentation invisible" id="id1">
+
+                <div class="profilImg">
+                    <img  class="one" src="./images/alineA.jpg" alt="">
+                    <img class="two" src="./images/alineB.jpg" alt="">
+                </div>
+
+                <p>
+                    Bonjour et bienvenue, je m'appelle Aline, je suis Architecte d'intérieur depuis maintenant plus de
+                    10 ans et je suis ici pour concrétiser vos project.
+                    <br><br>
+                    Grace à mon expértise et mon expérience je pourrais sublimer votre logement ou votre espace de
+                    travail afin de le rendre plus convivial et plus fonctionnel.<br>
+                </p>
+            </div>
+
+            <div class="menu gallery invisible" id="id2">
+
+                <div class="card">
+                    <img class="img" src="./images/cheminee.jpg" alt="renovation salon cheminée" onclick="modal(this)">
+                    <p>exemple de réalisation</p>
+                </div>
+
+                <div class="card">
+                    <img class="img" src="./images/douche.jpg" alt="renovation douche" onclick="modal(this)">
+                    <p>exemple de réalisation</p>
+                </div>
+
+                <div class="card">
+                    <img class="img" src="./images/escalier.jpg" alt="renovation escalier" onclick="modal(this)">
+                    <p>exemple de réalisation</p>
+                </div>
+
+                <div class="card">
+                    <img class="img" src="./images/sdb.jpg" alt="renovation salle de bain" onclick="modal(this)">
+                    <p>exemple de réalisation</p>
+                </div>
+
+                <div class="card">
+                    <img class="img" src="./images/cuisine.jpg" alt="renovation cuisine" onclick="modal(this)">
+                    <p>exemple de réalisation</p>
+                </div>
+
+                <div class="card">
+                    <img class="img" src="./images/entree.jpg" alt="renovation entrée" onclick="modal(this)">
+                    <p>exemple de réalisation</p>
+                </div>
+
+            </div>
+
+            <div class="menu contact invisible" id="id3">
+                <h1>Mangata Atelier design & Architecture</h1>
+                <div class="contact-contener">
+                    <p class="contacts">Aline Grandchauvin</p>
+                    <p class="mail"><span></span> &nbsp; monMail@mangata.fr</p>
+                    <p class="tel"><span></span> &nbsp; 00 00 00 00 00</p>
+                </div>
+                <p>Diplomée de l'Ecole Nationale des Beaux Arts de Dijon et de l'Ecole Supérieure des Beaux-Arts
+                    d'Angers</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>Made in Morbier (Jura)</p>
+        </footer>
+
+
+        <
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <div class="modalNavContainer">
+                    <a class="prev" onclick="modalNav(this)" >&#10094;</a>
+                    <span class="close" onclick="testAnim()">&times;</span>
+                    <a class="next" onclick="modalNav(this)">&#10095;</a>
+                </div>
+                <img class="modal-content" id="img01" src="" alt="">
+                <div id="caption"></div>
+            </div>
+
+
+
+
+        <nav class="navigation">
+            <img class="navLateral" src="./images/bandeau_lateral_sans_logo.png" alt="">
+            <ul class="ul-nav">
+                <li class="li-nav" onclick="active(this, 'id1')"><a href="#"> Qui suis-je</a></li>
+                <li class="li-nav" onclick="active(this, 'id2')"><a href="#">Mes réalisations</a></li>
+                <li class="li-nav" onclick="active(this,'id3')"><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+
+
+
+
+
+
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
